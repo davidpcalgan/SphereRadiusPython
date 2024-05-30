@@ -8,6 +8,6 @@ print(sphere_volume.foo(4.3))
 #testing value validation
 try:
     print(sphere_volume.foo(-2))
-except ValueError:
-    print("Radius must be a non-negative number.")
+except ValueError as e:
+    print(e)
 
